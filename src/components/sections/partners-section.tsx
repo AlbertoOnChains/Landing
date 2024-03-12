@@ -5,9 +5,7 @@ import Pimco from "../../../public/icons/pimco.png";
 import MercadoLibre from "../../../public/icons/mercado-libre.png";
 import CreditAgricole from "../../../public/icons/credit-agricole.png";
 import BBVA from "../../../public/icons/bbva.png";
-import StoneX from "../../../public/icons/stone-x.png";
-import ClearStreet from "../../../public/icons/clear-street.png";
-import Ankura from "../../../public/icons/ankura.png";
+import ArbitrumFoundation from "../../../public/icons/arbitrum-foundation.png";
 
 const PartnersSection = () => {
   return (
@@ -59,23 +57,17 @@ const PartnersSection = () => {
         </section>
       </div>
       <Separator orientation="horizontal" />
-      <div className="max-w-3xl relative flex items-center justify-between gap-16 w-full flex-col">
+      <div className="max-w-3xl relative flex items-center justify-between gap-16 w-full flex-col text-center">
         {" "}
         <section className="flex flex-col gap-4 text-center">
           <h3 className="font-atyp-display text-[24px] -tracking-[0.72px] text-transparent bg-clip-text bg-gradient-to-t from-[#FAFBFF] to-[#B3B9CB]">
-            Regulated Providers{" "}
+            Grant Support{" "}
           </h3>
           <p className="text-foreground-leading text-base w-full max-w-3xl">
-            Our funds entrust all assets to third-party accredited custodians and will undergo annual audits.
+            We are proud recipients of the Arbitrum Foundation&apos;s Grants program.
           </p>
         </section>
-        <section className="flex gap-4 w-full sm:flex-row flex-col items-center relative">
-          <span className="absolute opacity-20 blur-[100px] z-10 pointer-events-none bg-gradient-to-b rounded-full h-full w-full sm:-rotate-12 from-fuchsia-500 to-rose-500" aria-hidden="true"/>
-
-          <PartnerCard icon={ClearStreet} />
-          <PartnerCard icon={Ankura} />
-          <PartnerCard icon={StoneX} />
-        </section>
+        <PartnerCard icon={ArbitrumFoundation} iconWidth={240} iconHeight={240} />
       </div>
       <Separator orientation="horizontal" />
     </section>
